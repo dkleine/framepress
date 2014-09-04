@@ -1,0 +1,32 @@
+/*
+Theme Name: FramePress
+Theme URI: http://framepress.org
+Description: Basic WordPress Bootstrap frame for easier construction of custom themes. Includes JQuery 2.1.1, Bootstrap 3.2.0, FontAwesome 4.1.0
+Author: FramePress
+Author URI: http://framepress.org
+Template: framepress
+Version: 0.2
+GitHub Theme URI: dkleine/FramePress
+GitHub Theme URI: https://github.com/dkleine/FramePress
+*/
+
+/* global styles */
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* header area default styling, feel free to change of remove */
+#framepress-header{
+    padding:10px 0px 0px 0px;
+}
+
+.framepress-primary-menu li a{
+    font-size:16px;
+    padding:0px 10px 0px 0px;
+}
+.framepress-primary-menu li{
+    display:inline-block;
+}
+
+/* start other custom code here: */
