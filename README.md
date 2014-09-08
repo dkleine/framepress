@@ -10,6 +10,10 @@ Quick and easy.
 - Activate in the backend
 - Ready!
 
+### Updates ###
+
+FramePress updates all by itself when the updater plugin is installed. This should automatically be installed together with the framework.
+
 ### Shortcodes ###
 
 - Breadcrumbs: <?php framepress_breadcrumb(); ?>
