@@ -5,8 +5,8 @@ Description: Basic WordPress Bootstrap frame for easier construction of custom t
 Author: FramePress
 Author URI: http://framepress.org
 Template: framepress
-Version: 1.0.6
-Template Version: 1.0.6
+Version: 1.0.7
+Template Version: 1.0.7
 GitHub Theme URI: https://github.com/dkleine/framepress
 GitHub Branch: master
 */
@@ -15,6 +15,10 @@ GitHub Branch: master
 img{
     max-width:100%;
     height:auto;
+}
+
+a img{
+    border:none;
 }
 
 /* header area default styling, feel free to change of remove */
