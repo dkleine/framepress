@@ -88,4 +88,6 @@ require_once get_template_directory() . '/inc/class-pagination.php';
 require_once get_template_directory() . '/inc/class-customization.php';
 require_once get_template_directory() . '/inc/class-breadcrumb.php';
 require_once get_template_directory() . '/inc/class-security.php';
+// admin widgets
+require_once get_template_directory() . '/inc/class-dashboard-news.php';
 ?>

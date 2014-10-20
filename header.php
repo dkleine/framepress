@@ -1,6 +1,8 @@
-<html>
+ <!DOCTYPE html>
+<html lang="en-us">
     <head>
         <!-- including standard wordpress meta -->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,7 +16,7 @@
         <?php wp_head(); ?>
         
         <!-- link stylesheet for child templates -->
-        <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen">
     </head>
 
     <body>
