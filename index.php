@@ -14,9 +14,9 @@
             <?php the_content(); ?>
             <?php endwhile; else : ?>
             <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-            <!-- display pagination -->
-            <?php framepress_numeric_posts_nav(); ?>
         <?php endif; ?>
+        <!-- display pagination -->
+        <?php framepress_numeric_posts_nav(); ?>
     </div>
 </div>
 

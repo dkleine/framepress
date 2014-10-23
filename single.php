@@ -13,8 +13,6 @@
             <?php the_content(); ?>
              <?php wp_list_comments( $args, $comments ); ?> 
             <?php endwhile; ?>
-            <!-- display pagination -->
-            <?php framepress_numeric_posts_nav(); ?>
         <?php endif; ?>
     </div>
 </div>

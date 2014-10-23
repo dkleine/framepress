@@ -12,9 +12,7 @@
             <!-- display post content -->
             <?php the_content(); ?>
             <?php endwhile; else : ?>
-            <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-            <!-- display pagination -->
-            <?php framepress_numeric_posts_nav(); ?>
+            <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>            
         <?php endif; ?>
     </div>
 </div>

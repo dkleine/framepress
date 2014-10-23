@@ -21,6 +21,4 @@
 
     <body>
         
-        <div class="container" id="framepress-header">
-            <?php get_template_part( 'partials/content', 'nav' ); ?>
-        </div>
+    <?php get_template_part( 'partials/content', 'nav' ); ?>
