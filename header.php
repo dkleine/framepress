@@ -22,5 +22,5 @@
     <body>
         
         <div class="container" id="framepress-header">
-            <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'framepress-primary-menu')); ?>
+            <?php get_template_part( 'partials/content', 'nav' ); ?>
         </div>

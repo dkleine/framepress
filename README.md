@@ -18,3 +18,7 @@ FramePress updates all by itself when the updater plugin is installed. This shou
 
 - Breadcrumbs: <?php framepress_breadcrumb(); ?>
 - Navigation: <?php framepress_numeric_posts_nav(); ?>
+
+### Docs ###
+
+Extended nav menu: https://github.com/twittem/wp-bootstrap-navwalker
