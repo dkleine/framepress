@@ -33,7 +33,6 @@ function framepress_styles() {
     wp_register_style('framepress-class-style', get_template_directory_uri() . '/inc/css/class.css');
     wp_enqueue_style('framepress-class-style');
     
-    wp_deregister_script('jquery');
     wp_register_script('framepress-jquery', get_template_directory_uri() . '/inc/js/jquery-2.1.1.min.js');
     wp_enqueue_script('framepress-jquery');
 
