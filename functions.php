@@ -12,8 +12,6 @@ function framepress_setup() {
     add_image_size(thumb_400x350, 400, 350, true); // demo image size
 }
 
-add_action('customize_register', 'framepress_register');
-
 // add basic stylesheets and scripts
 add_action('wp_enqueue_scripts', 'framepress_styles');
 
@@ -69,6 +67,8 @@ function alx_plugins() {
             'slug' => 'image-widget',
         ),
         
+        
+        // github updater to keep theme actual
         array(
             'name'               => 'Github Updater',
             'slug'               => 'github-updater',

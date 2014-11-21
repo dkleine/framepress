@@ -9,8 +9,8 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                <?php bloginfo('name'); ?>
-            </a>
+        <?php bloginfo('name'); ?> | <?php echo '<img src="' . get_theme_mod('logo-upload') . '"/>' ?>
+      </a>
     </div>
 
         <?php
