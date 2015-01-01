@@ -53,6 +53,23 @@ function framepress_widgets_init() {
 
 add_action('widgets_init', 'framepress_widgets_init');
 
+// updating search page to highlight search phrases
+function search_excerpt_highlight() {
+    $excerpt = get_the_excerpt();
+    $keys = implode('|', explode(' ', get_search_query()));
+    $excerpt = preg_replace('/(' . $keys .')/iu', '<strong class="search-highlight">\0</strong>', $excerpt);
+
+    echo '<p>' . $excerpt . '</p>';
+}
+
+function search_title_highlight() {
+    $title = get_the_title();
+    $keys = implode('|', explode(' ', get_search_query()));
+    $title = preg_replace('/(' . $keys .')/iu', '<strong class="search-highlight">\0</strong>', $title);
+
+    echo $title;
+}
+
 // adding the plugin checker with some basic recommended plugins
 require_once get_template_directory() . '/inc/class-tgm-plugin-activation.php';
 

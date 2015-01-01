@@ -13,8 +13,8 @@
     
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <!-- display post content -->
-            <h3><?php the_title(); ?></h3>
-            <?php the_excerpt(); ?>
+            <a href="<?php the_permalink(); ?>"><h3><?php search_title_highlight(); ?></h3></a>
+            <?php search_excerpt_highlight(); ?>
             <?php endwhile; else: ?>
             <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
         <?php endif; ?>
