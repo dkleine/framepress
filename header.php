@@ -1,5 +1,5 @@
  <!DOCTYPE html>
-<html lang="en-us">
+<html <?php language_attributes(); ?>>
     <head>
         <!-- including standard wordpress meta -->
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">

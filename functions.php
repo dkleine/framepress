@@ -10,6 +10,12 @@ function framepress_setup() {
     add_theme_support('post-thumbnails'); // featured images
 
     add_image_size(thumb_400x350, 400, 350, true); // demo image size
+
+    // add background image and color support in the theme editor
+    add_theme_support('custom-background', apply_filters('framepress_custom_background_args', array(
+        'default-color' => 'ffffff',
+        'default-image' => '',
+    )));
 }
 
 // add basic stylesheets and scripts
@@ -18,19 +24,19 @@ add_action('wp_enqueue_scripts', 'framepress_styles');
 function framepress_styles() {
     wp_register_style('framepress-main-style', get_template_directory_uri() . '/style.css');
     wp_enqueue_style('framepress-main-style');
-    
+
     wp_register_style('framepress-default-style', get_template_directory_uri() . '/inc/css/wordpress-default.css');
     wp_enqueue_style('framepress-default-style');
-    
+
     wp_register_style('framepress-bootstrap-style', get_template_directory_uri() . '/inc/css/bootstrap.min.css');
     wp_enqueue_style('framepress-bootstrap-style');
-    
+
     wp_register_style('framepress-fontawesome-style', get_template_directory_uri() . '/inc/css/font-awesome.min.css');
     wp_enqueue_style('framepress-fontawesome-style');
 
     wp_register_style('framepress-class-style', get_template_directory_uri() . '/inc/css/class.css');
     wp_enqueue_style('framepress-class-style');
-    
+
     wp_register_script('framepress-jquery', get_template_directory_uri() . '/inc/js/jquery-2.1.1.min.js');
     wp_enqueue_script('framepress-jquery');
 
@@ -57,7 +63,7 @@ add_action('widgets_init', 'framepress_widgets_init');
 function search_excerpt_highlight() {
     $excerpt = get_the_excerpt();
     $keys = implode('|', explode(' ', get_search_query()));
-    $excerpt = preg_replace('/(' . $keys .')/iu', '<strong class="search-highlight">\0</strong>', $excerpt);
+    $excerpt = preg_replace('/(' . $keys . ')/iu', '<strong class="search-highlight">\0</strong>', $excerpt);
 
     echo '<p>' . $excerpt . '</p>';
 }
@@ -65,7 +71,7 @@ function search_excerpt_highlight() {
 function search_title_highlight() {
     $title = get_the_title();
     $keys = implode('|', explode(' ', get_search_query()));
-    $title = preg_replace('/(' . $keys .')/iu', '<strong class="search-highlight">\0</strong>', $title);
+    $title = preg_replace('/(' . $keys . ')/iu', '<strong class="search-highlight">\0</strong>', $title);
 
     echo $title;
 }
@@ -83,15 +89,13 @@ function alx_plugins() {
             'name' => 'Image Widget',
             'slug' => 'image-widget',
         ),
-        
-        
         // github updater to keep theme actual
         array(
-            'name'               => 'Github Updater',
-            'slug'               => 'github-updater',
-            'source'             => 'https://github.com/afragen/github-updater/archive/develop.zip',
-            'required'           => true,
-            'external_url'       => 'https://github.com/afragen/github-updater',
+            'name' => 'Github Updater',
+            'slug' => 'github-updater',
+            'source' => 'https://github.com/afragen/github-updater/archive/develop.zip',
+            'required' => true,
+            'external_url' => 'https://github.com/afragen/github-updater',
         ),
     );
     tgmpa($plugins);
