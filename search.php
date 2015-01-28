@@ -1,5 +1,12 @@
-<?php /* Template Name: Search Page */ ?>
-﻿<?php get_header(); ?>
+<?php 
+/* Template Name: Search Page */
+/**
+ * The search page template
+ *
+ * @package FramePress
+ * @since FramePress 1.0
+ */
+get_header(); ?>
 
 <!-- everything after the body tag goes here -->
 <div class="container">

@@ -1,4 +1,14 @@
- <!DOCTYPE html>
+<?php
+/**
+ * The theme header.
+ *
+ * Displays all of the <head> section and the primary menu
+ *
+ * @package FramePress
+ * @since FramePress 1.0
+ */
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
     <head>
         <!-- including standard wordpress meta -->

@@ -1,4 +1,11 @@
-﻿<?php get_header(); ?>
+﻿<?php 
+/**
+ * The main template file.
+ *
+ * @package FramePress
+ * @since FramePress 1.0
+ */
+get_header(); ?>
 
 <!-- everything after the body tag goes here -->
 <div class="container">
