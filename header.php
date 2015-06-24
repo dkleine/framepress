@@ -25,8 +25,6 @@
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
         <?php wp_head(); ?>
         
-        <!-- link stylesheet for child templates -->
-        <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen">
     </head>
 
     <body>
