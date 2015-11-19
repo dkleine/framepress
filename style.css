@@ -1,12 +1,12 @@
 /*
 Theme Name: FramePress
 Author URI: https://solutions.io
-Description: Basic WordPress Bootstrap frame for easier construction of custom themes. Includes JQuery 2.1.1, Bootstrap 3.2.0, FontAwesome 4.3.0
+Description: Custom WordPress starter theme for lazy development.
 Author: solutions.io
 Author URI: https://solutions.io
 Template: framepress
-Version: 1.1.2
-Template Version: 1.1.2
+Version: 1.2
+Template Version: 1.2
 GitHub Theme URI: https://github.com/dkleine/framepress
 GitHub Branch: master
 */
@@ -21,30 +21,21 @@ a img{
     border:none;
 }
 
-/* header area default styling, feel free to change of remove */
 #framepress-header{
-    padding:10px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
 }
 
 .framepress-primary-menu li a{
-    font-size:16px;
-    padding:0px 10px 0px 0px;
+    padding: 0px 10px 0px 0px;
 }
 .framepress-primary-menu li{
-    display:inline-block;
+    display: inline-block;
 }
 
 .site-logo{
-    padding-top:5px;
+    padding-top: 5px;
 }
 .site-logo img{
-    height:100%;
-    width:auto;
+    height: 100%;
+    width: auto;
 }
-
-/* footer area default styling */
-.framepress-footer{
-    text-align: center;
-}
-
-/* start other custom code here: */

@@ -1,7 +1,13 @@
-<?php /* Template Name: Archive Page */ ?>
-﻿<?php get_header(); ?>
+<?php 
+/**
+ * Template Name: Archive Page
+ * The Archive page main template.
+ *
+ * @package FramePress
+ * @since FramePress 1.0
+ */
+get_header(); ?>
 
-<!-- everything after the body tag goes here -->
 <div class="container">
     <div class="col-md-4">
         <?php get_sidebar(); ?>
@@ -26,4 +32,4 @@
     </div>
 </div>
 
-﻿<?php get_footer(); ?>
+﻿<?php get_footer();

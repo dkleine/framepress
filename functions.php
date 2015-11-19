@@ -43,6 +43,9 @@ function framepress_styles() {
     wp_deregister_script('bootstrap');
     wp_register_script('framepress-bootstrap', get_template_directory_uri() . '/inc/js/bootstrap.min.js');
     wp_enqueue_script('framepress-bootstrap');
+
+    wp_register_script('framepress-main', get_template_directory_uri() . '/inc/js/main.js');
+    wp_enqueue_script('framepress-main');
 }
 
 // adding first widget

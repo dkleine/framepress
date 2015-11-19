@@ -7,7 +7,6 @@
  */
 get_header(); ?>
 
-<!-- everything after the body tag goes here -->
 <div class="container">
     <div class="col-md-4">
         <?php get_sidebar(); ?>
@@ -16,7 +15,6 @@ get_header(); ?>
         <?php framepress_breadcrumb(); ?>
     
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <!-- display post content -->
             <?php the_content(); ?>
             <?php endwhile; else : ?>
             <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>            
@@ -24,4 +22,4 @@ get_header(); ?>
     </div>
 </div>
 
-﻿<?php get_footer(); ?>
+﻿<?php get_footer();
