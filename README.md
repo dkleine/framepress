@@ -1,18 +1,6 @@
 # README #
 
-FramePress is a custom, lightweight WordPress framework designed to quickly build a WordPress theme without having to worry about adding often used features (breadcrumbs, custom posts etc.) to work every single time. Install this frame as a parent theme, and customize the child theme using Bootstrap. 
-
-Quick and easy.
-
-### How to use ###
-
-- Upload to theme directory
-- Activate in the backend
-- Ready!
-
-### Updates ###
-
-FramePress updates all by itself when the updater plugin is installed. This should be installed together with the framework.
+Empty template for easier development.
 
 ### Shortcodes ###
 
