@@ -1,24 +1,20 @@
 /*
 Theme Name: FramePress
-Author URI: https://solutions.io
 Description: Custom WordPress starter theme for lazy development.
 Author: solutions.io
 Author URI: https://solutions.io
 Template: framepress
-Version: 1.2
-Template Version: 1.2
-GitHub Theme URI: https://github.com/dkleine/framepress
-GitHub Branch: master
+Version: 1.3
 */
 
 /* global styles */
 img{
-    max-width:100%;
-    height:auto;
+    max-width: 100%;
+    height: auto;
 }
 
 a img{
-    border:none;
+    border: none;
 }
 
 #framepress-header{

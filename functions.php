@@ -92,14 +92,6 @@ function alx_plugins() {
             'name' => 'Image Widget',
             'slug' => 'image-widget',
         ),
-        // github updater to keep theme actual
-        array(
-            'name' => 'Github Updater',
-            'slug' => 'github-updater',
-            'source' => 'https://github.com/afragen/github-updater/archive/develop.zip',
-            'required' => true,
-            'external_url' => 'https://github.com/afragen/github-updater',
-        ),
     );
     tgmpa($plugins);
 }
