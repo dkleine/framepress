@@ -9,8 +9,6 @@ function framepress_setup() {
     register_nav_menu('secondary', __('Secondary Menu', 'framepress')); // main navmenu
     add_theme_support('post-thumbnails'); // featured images
 
-    add_image_size(thumb_400x350, 400, 350, true); // demo image size
-
     // add background image and color support in the theme editor
     add_theme_support('custom-background', apply_filters('framepress_custom_background_args', array(
         'default-color' => 'ffffff',

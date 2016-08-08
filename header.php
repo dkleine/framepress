@@ -25,5 +25,7 @@
     </head>
 
     <body>
-        
-    <?php get_template_part( 'partials/content', 'nav' ); ?>
+    
+    <section id="navigation">
+      <?php get_template_part( 'partials/content', 'nav' ); ?>
+    </section>

@@ -5,10 +5,12 @@
  * @package FramePress
  * @since FramePress 1.0
  */
-if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('primary')) : ?>
+if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('primary')) :
+?>
 
-    <div>				
-        No widgets active
-    </div>
+  <div>				
+    No widgets active
+  </div>
 
-<?php endif; ?>
+<?php
+endif;
