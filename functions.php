@@ -8,11 +8,6 @@ function framepress_setup() {
   register_nav_menu('primary', __('Primary Menu', 'framepress')); // main navmenu
   register_nav_menu('secondary', __('Secondary Menu', 'framepress')); // main navmenu
   add_theme_support('post-thumbnails'); // featured images
-  // add background image and color support in the theme editor
-  add_theme_support('custom-background', apply_filters('framepress_custom_background_args', array(
-      'default-color' => 'ffffff',
-      'default-image' => '',
-  )));
 }
 
 // add basic stylesheets and scripts
