@@ -4,17 +4,18 @@
  *
  * @package FramePress
  * @since FramePress 1.0
+ * @last update 05.01.17
  */
 ?>
-<footer id="footer" role="contentinfo">
+<section id="footer">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12" id="site-info">
+      <div class="col-sm-12">
         <?php _e('Copyright', 'framepress'); ?> &copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?>. 
       </div>
     </div>
   </div>
-</footer>
+</section>
 
 <?php wp_footer(); ?>
 </body>
