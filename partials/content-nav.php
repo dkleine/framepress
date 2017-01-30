@@ -8,15 +8,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <?php if (get_theme_mod('logo-upload')) : ?>
-          <div class="site-logo">
-            <a href="<?php echo esc_url(home_url('/')); ?>" title='<?php echo esc_attr(get_bloginfo('name', 'display')); ?>' rel='home'><img src="<?php echo esc_url(get_theme_mod('logo-upload')); ?>" alt='<?php echo esc_attr(get_bloginfo('name', 'display')); ?>'></a>
-          </div>
-        <?php else : ?>
-          <div class="site-logo">
-            <a href="<?php echo esc_url(home_url('/')); ?>" title='<?php echo esc_attr(get_bloginfo('name', 'display')); ?>' rel='home'><img src="<?php echo get_stylesheet_directory_uri(); ?>/inc/img/framepress-default.png" alt='<?php echo esc_attr(get_bloginfo('name', 'display')); ?>'></a>
-          </div>
-        <?php endif; ?>
+        <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
+          <?php if (get_theme_mod('logo-upload')) : ?>
+            <img src="<?php echo esc_url(get_theme_mod('logo-upload')); ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
+          <?php else : ?>
+            <h1><?php bloginfo('name'); ?></h1>
+          <?php endif; ?>
+        </a>
       </div>
 
       <?php
