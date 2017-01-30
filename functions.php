@@ -6,8 +6,9 @@ add_action('after_setup_theme', 'framepress_setup');
 function framepress_setup() {
   add_theme_support('automatic-feed-links'); // rss
   register_nav_menu('primary', __('Primary Menu', 'framepress')); // main navmenu
-  register_nav_menu('secondary', __('Secondary Menu', 'framepress')); // main navmenu
-  add_theme_support('post-thumbnails'); // featured images
+  register_nav_menu('secondary', __('Secondary Menu', 'framepress'));
+  add_theme_support('title-tag');
+  add_theme_support('post-thumbnails');
 }
 
 // add basic stylesheets and scripts

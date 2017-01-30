@@ -19,7 +19,6 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/img/framepress-favicon.png">
 
-        <title><?php bloginfo("name") ?> - <?php if (is_home()) { echo 'Home'; } else { the_title(); } ?></title>
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
         <?php wp_head(); ?>
         
