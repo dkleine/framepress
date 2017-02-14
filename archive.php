@@ -5,7 +5,6 @@
  *
  * @package FramePress
  * @since FramePress 1.0
- * @last update 05.01.17
  */
 get_header();
 ?>
@@ -18,20 +17,35 @@ get_header();
     <div class="col-md-8">
       <?php framepress_breadcrumb(); ?>
 
-      <?php the_post(); ?>
-      <h1 class="entry-title"><?php the_title(); ?></h1>
+      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+          <span class="date"><?php the_date(); ?></span>
+          <h1><?php the_title(); ?></h1>
+          <?php the_post_thumbnail(); ?>
+          <?php the_excerpt(); ?>
 
-      <?php get_search_form(); ?>
+          <?php comments_template(); ?> 
+        <?php endwhile; ?>
+      <?php endif; ?>
 
-      <h2>Archives by Month:</h2>
-      <ul>
-        <?php wp_get_archives('type=monthly'); ?>
-      </ul>
-
-      <h2>Archives by Subject:</h2>
-      <ul>
-        <?php wp_list_categories(); ?>
-      </ul>
+      <div class="archive">
+        <div class="row">
+          <div class="col-sm-12">
+            <?php get_search_form(); ?>
+          </div>
+          <div class="col-sm-6">
+            <h2>Archives by Month:</h2>
+            <ul>
+              <?php wp_get_archives('type=monthly'); ?>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <h2>Archives by Subject:</h2>
+            <ul>
+              <?php wp_list_categories(); ?>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
