@@ -1,6 +1,7 @@
 # README #
 
 Empty template for easier development.
+Based on Twitter Bootstrap 4
 
 ### Shortcodes ###
 

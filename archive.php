@@ -29,16 +29,16 @@ get_header();
 
       <div class="archive">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-md-12">
             <?php get_search_form(); ?>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <h2>Archives by Month:</h2>
             <ul>
               <?php wp_get_archives('type=monthly'); ?>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <h2>Archives by Subject:</h2>
             <ul>
               <?php wp_list_categories(); ?>

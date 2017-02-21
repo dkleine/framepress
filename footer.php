@@ -4,13 +4,12 @@
  *
  * @package FramePress
  * @since FramePress 1.0
- * @last update 05.01.17
  */
 ?>
 <section id="footer">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-md-12">
         <?php _e('Copyright', 'framepress'); ?> &copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?>. 
       </div>
     </div>

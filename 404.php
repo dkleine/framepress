@@ -11,10 +11,10 @@ get_header();
 <section id="page-404">
   <div class="container">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-md-4">
         <?php get_sidebar(); ?>
       </div>
-      <div class="col-sm-8">
+      <div class="col-md-8">
         <?php framepress_breadcrumb(); ?>
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

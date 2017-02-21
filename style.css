@@ -3,7 +3,7 @@ Theme Name: FramePress
 Description: Custom WordPress starter theme for lazy development.
 Author: solutions.io
 Author URI: https://solutions.io
-Version: 1.4.1
+Version: 1.5
 */
 
 /* ------------------------------------------- Global Styles --- */
@@ -18,6 +18,9 @@ a img{
 /* ------------------------------------------- Navigation Styles --- */
 section#navigation .navbar{
   border-radius: 0px;
+}
+section#navigation .navbar-toggler{
+  border: 1px solid #000;
 }
 
 /* ------------------------------------------- Other Styles --- */

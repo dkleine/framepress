@@ -7,8 +7,10 @@
  */
 ?>
 
-<?php comment_form(); ?>
+<section id="comments">
+  <?php comment_form(); ?>
 
-<ol class="commentlist">
+  <ol class="commentlist">
     <?php wp_list_comments(); ?>
-</ol>
+  </ol>
+</section>

@@ -10,10 +10,10 @@ get_header();
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-md-4">
       <?php get_sidebar(); ?>
     </div>
-    <div class="col-sm-8">
+    <div class="col-md-8">
       <?php framepress_breadcrumb(); ?>
 
       <?php echo $wp_query->found_posts; ?> <?php _e('Search Results Found For', 'locale'); ?>: "<?php the_search_query(); ?>"
